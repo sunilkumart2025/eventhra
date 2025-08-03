@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTHRA - Official Technical Club</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -48,7 +52,7 @@
         }
 
 
-
+        
 
 
 
@@ -60,7 +64,10 @@
     <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
+                <div class="flex-shrink-0" style="display: flex;
+                    align-items: center;
+                    gap: 10px;">
+                    <img class="header_logo" src="logo.jpeg" alt="EVENTHRA Logo" style="height: 40px; width: 40px;">
                     <a href="#home" class="text-2xl font-bold text-indigo-600">EVENTHRA</a>
                 </div>
                 <nav class="hidden md:flex md:space-x-8">
@@ -95,7 +102,7 @@
         <section id="home" class="min-h-screen flex items-center justify-center bg-gray-50 pt-16">
             <div class="text-center px-4">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 tracking-tight">
-                    <span class="block text-indigo-600 mt-2">EVENTHRA</span>
+                    <span  class="block text-indigo-600 mt-2">EVENTHRA</span>
                     <span class="block" style="font-size: 35px;
                     padding-top: 10px;">CODE-COMPETE-CONQUER</span>
                 </h1>
@@ -103,7 +110,7 @@
                     Official Technical Club of Information Technology Department
                     <br>Easwari Engineering College
                 </p>
-                <div class="mt-10">
+                <div style="padding-top: 25px;" class="animate__animated animate__slideInUp" class="mt-10">
                     <a href="#offer" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-transform transform hover:scale-105">
                         Explore Our Club
                     </a>
@@ -111,7 +118,7 @@
                 
             </div>
         </section>
-
+    
         <section id="offer" class="py-20 bg-white section-fade-in">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -121,28 +128,28 @@
                     </p>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div style="background-color: #e0e0d1;" class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
                             <span class="text-2xl">💻</span>
                         </div>
                         <h3 class="mt-5 text-lg font-medium text-slate-900">Workshops</h3>
                         <p class="mt-2 text-base text-slate-600">Hands-on technical sessions covering latest technologies, programming languages, and industry tools.</p>
                     </div>
-                    <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div style="background-color: #e0e0d1;" class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
                             <span class="text-2xl">🏆</span>
                         </div>
                         <h3 class="mt-5 text-lg font-medium text-slate-900">Competitions</h3>
                         <p class="mt-2 text-base text-slate-600">Exciting codeathons, hackathons, and technical challenges to test and improve your skills.</p>
                     </div>
-                    <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div style="background-color: #e0e0d1;" class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
                            <span class="text-2xl">📚</span>
                         </div>
                         <h3 class="mt-5 text-lg font-medium text-slate-900">Learning Hub</h3>
                         <p class="mt-2 text-base text-slate-600">Curated study materials, tutorials, and resources for comprehensive technical learning.</p>
                     </div>
-                    <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div style="background-color: #e0e0d1;" class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
                             <span class="text-2xl">🤝</span>
                         </div>
@@ -161,8 +168,8 @@
                         Access our curated collection of learning resources to enhance your technical skills.
                     </p>
                 </div>
-                <div class="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-1 lg:max-w-none">
-                     <div style="width: 50%;" class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white">
+                <div  class="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-1 lg:max-w-none">
+                     <div style="max-width: 500px;" class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white">
                         <div class="flex-1 p-6 flex flex-col justify-between">
                             <div class="flex-1">
                                 <p class="text-sm font-medium text-indigo-600">
@@ -190,7 +197,7 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-slate-800 sm:text-4xl">Events</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-600">
+                    <p  class="mt-4 max-w-2xl mx-auto text-xl text-slate-600">
                         Stay updated with our upcoming and past events.
                     </p>
                 </div>
