@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Hunt</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6f0ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 0;
+            color: #1a202c;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .container {
+            background-color: white;
+            max-width: 900px;
+            width: 95%;
+            border-radius: 1.5rem;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        .header-gradient {
+            background-image: linear-gradient(45deg, #a770ef, #cf8bf3, #f5319f);
+            color: white;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-gradient::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(-15deg);
+            z-index: 0;
+            animation: moveGradient 20s ease-in-out infinite;
+        }
+
+        @keyframes moveGradient {
+            0% { transform: rotate(-15deg) translate(0, 0); }
+            50% { transform: rotate(-15deg) translate(-20%, 20%); }
+            100% { transform: rotate(-15deg) translate(0, 0); }
+        }
+
+        .section-card {
+            background-color: #f7fafc;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .button-style {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+        }
+
+        .button-register {
+            background-image: linear-gradient(45deg, #f5319f, #cf8bf3);
+            color: white;
+        }
+
+        .button-register:hover {
+            box-shadow: 0 8px 15px rgba(245, 49, 159, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .button-whatsapp {
+            background-color: white;
+            color: #25d366;
+            border: 2px solid #25d366;
+        }
+        
+        .button-whatsapp:hover {
+            box-shadow: 0 8px 15px rgba(37, 211, 102, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .icon-container {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with colorful gradient -->
+        <header class="header-gradient rounded-t-2xl">
+            <div class="relative z-10">
+                <p class="text-xl font-light tracking-widest uppercase mb-4">presents</p>
+                <h1 class="text-6xl font-bold">Talent Hunt</h1>
+            </div>
+        </header>
+
+        <main class="p-8 space-y-8">
+            <!-- Event Information Section -->
+            <section class="section-card">
+                <h2 class="text-2xl font-bold text-[#f5319f] mb-4 flex items-center space-x-2">
+                    <span class="icon-container bg-[#cf8bf3]"><i data-lucide="info"></i></span>
+                    <span>Event Information</span>
+                </h2>
+                <div class="space-y-4 text-md text-gray-700">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-[#cf8bf3]"><i data-lucide="calendar"></i></span>
+                        <p>Friday, August 22, 2025</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-[#cf8bf3]"><i data-lucide="dollar-sign"></i></span>
+                        <p>Free</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-[#cf8bf3]"><i data-lucide="brush"></i></span>
+                        <p>Theme: Spectrum</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Description Section -->
+            <section class="section-card">
+                <h2 class="text-2xl font-bold text-[#f5319f] mb-4 flex items-center space-x-2">
+                    <span class="icon-container bg-[#a770ef]"><i data-lucide="file-text"></i></span>
+                    <span>Description</span>
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Showcase your creativity through artwork or innovative project prototypes!
+                </p>
+                <h3 class="text-xl font-semibold text-[#f5319f] mt-4">Detailed Information</h3>
+                <p class="text-gray-600">
+                    Eventhra Club invites all 2nd and 3rd year IT students to participate in Talent Hunt, a platform to express your
+                    creativity through art or demonstrate your problem-solving skills with innovative tech projects. A jury member
+                    from Smart India Hackathon (SIH) will personally review all submissions and deliver a guest lecture on creativity
+                    and innovation. Participants are required to submit a photo of their artwork or a short video/image of their
+                    project prototype in advance for review.
+                </p>
+            </section>
+            
+            <!-- Event Rules Section -->
+            <section class="section-card">
+                <h2 class="text-2xl font-bold text-[#f5319f] mb-4 flex items-center space-x-2">
+                    <span class="icon-container bg-[#cf8bf3]"><i data-lucide="list"></i></span>
+                    <span>Event Rules</span>
+                </h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-600 pl-4">
+                    <li>Individual participation only</li>
+                    <li>Artwork must be original</li>
+                    <li>Project prototypes must be student-built</li>
+                    <li>Submissions must be sent on or before 10 August 2025</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Buttons at the bottom -->
+        <footer class="p-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+            <button href="https://chat.whatsapp.com/FAyrnWmVMbvKsHvmEx7M7Y?mode=ac_t" id="whatsapp-button" class="flex items-center justify-center space-x-2 py-3 px-6 rounded-full font-semibold button-style button-whatsapp">
+                <i data-lucide="message-circle-code"></i>
+                <span>Join WhatsApp Group</span>
+            </button>
+            <button href="https://forms.gle/CkVqCSGrDoPgJwiXA" id="register-button" class="flex items-center justify-center space-x-2 py-3 px-6 rounded-full font-semibold button-style button-register">
+                <i data-lucide="link"></i>
+                <span>Register Now</span>
+            </button>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // JavaScript for button functionality
+        document.getElementById('whatsapp-button').addEventListener('click', () => {
+            // Replace with your actual WhatsApp group link
+            window.open('https://chat.whatsapp.com/', '_blank');
+        });
+
+        document.getElementById('register-button').addEventListener('click', () => {
+            // Replace with your actual registration link
+            window.open('https://example.com/register', '_blank');
+        });
+    </script>
+</body>
+</html>
